@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - QScript Coffee</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional Menu Page Styles */
+        .menu-section {
+            position: relative;
+            padding: 50px 0;
+            text-align: center;
+            overflow: hidden;
+            background: url('menu1.jpg') no-repeat center center/cover;
+        }
+
+        .menu-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+            filter: blur(50px); /* Apply blur effect */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            z-index: 1; /* Ensure overlay is above content */
+        }
+
+        .menu-content {
+            z-index: 2; /* Ensure content is above overlay */
+        }
+
+        .menu-item {
+            margin-bottom: 50px;
+        }
+
+        .menu-item img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .menu-item img:hover {
+            transform: scale(1.1);
+        }
+
+        .menu-item h3 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .menu-item p {
+            font-size: 1.2rem;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>QScript Coffee</h1>
+        <div class="header-buttons">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </header>
+
+    <section class="menu-section">
+        <div class="container">
+            <div class="menu-item">
+                <img src="espresso.jpg" alt="Coffee 1">
+                <h3>Espresso</h3>
+                <p>A strong and concentrated coffee brewed by forcing hot water through finely-ground coffee beans.</p>
+            </div>
+            <div class="menu-item">
+                <img src="coffee2.jpg" alt="Coffee 2">
+                <h3>Cappuccino</h3>
+                <p>Espresso mixed with steamed milk and topped with a thick layer of foamed milk.</p>
+            </div>
+            <div class="menu-item">
+                <img src="coffee3.jpg" alt="Coffee 3">
+                <h3>Latte</h3>
+                <p>Espresso with steamed milk and a small amount of frothed milk, usually served in a tall glass.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 QScript Coffee. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
